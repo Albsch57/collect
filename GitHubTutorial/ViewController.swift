@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     private let label: UILabel = {
         let label = UILabel()
         label.text = "Hello, GitHub"
+        label.textColor = .secondaryLabel
         return label
     }()
     
