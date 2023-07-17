@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     private let label: UILabel = {
         let label = UILabel()
+        label.text = "Hello, GitHub"
         return label
     }()
     
