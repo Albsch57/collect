@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.text = "Hello, GitHub"
         label.textColor = .secondaryLabel
+        label.textAlignment = .left
         return label
     }()
     
