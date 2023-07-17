@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let label: UILabel = {
+    private let label: UILabel = {
         let label = UILabel()
         return label
     }()
@@ -17,7 +17,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        configurate()
     }
 
+    
+    func configurate() {
+        view.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
 }
 
